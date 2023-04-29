@@ -1,0 +1,248 @@
+
+
+
+@font-face {
+    font-family: 'bruno';
+    src: url('brunoacesc-regular-webfont.woff2') format('woff2'),url('brunoacesc-regular-webfont.woff') format('woff');
+}
+#submit{
+    border:  1px solid rgb(255, 255, 255);
+    background-color: rgba(240, 248, 255, 0.107);
+    border-radius: 20px;
+    color: #ffffff;
+    margin-block : 20px;
+    font-family: 'bruno';
+    pointer-events: all;
+
+}
+body{
+    background-color: rgb(122, 122, 122);
+    background-image: url("background-home-desktop.jpg");
+    background-repeat: repeat;
+    background-size:cover ;
+    
+}
+#task,#date,#hr,#min,#sec{
+    border:2px solid #00fffb;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgba(135, 222, 192, 0.05);
+    color: aliceblue;
+    font-family: 'bruno';
+    pointer-events: all;
+}
+#heading{
+    font-family: 'bruno';
+    color: rgb(255, 255, 255);
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+}
+.text-left{
+    border:4px solid #ff3465;
+    border-radius: 15px;
+    background-color: #1e1e1e;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin-block: 5vh;
+}
+.navbar-brand{
+    font-family: 'bruno';
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    padding-block: 10px;
+}
+.text-capitalize{
+    font-family: 'bruno';
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    padding-block: 10px;
+    font-size: 3rem;
+    padding-block: 20px;
+}
+.entries-recorder{
+    display: flex;
+    flex-direction: row;
+}
+.dattee{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+.dayss,.hours,.minutes,.seconds{
+    color:aliceblue;
+    background-color: #d0d0d000;
+    border:1px solid rgb(21, 255, 0);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.292);
+    border-radius: 10px;
+    width: 80px;
+    height:80px;
+    margin:10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'bruno';
+    
+}
+
+#days,#hours,#minutes,#seconds{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+.task-name{
+    font-family: 'bruno';
+    font-size: 3rem;
+    color:aliceblue;
+    padding-block: 5px;
+    padding-inline-start: 15px;
+    
+}
+.dattee{
+    margin-inline-start: 10vw;
+    margin-inline-end: 10vw;
+    margin-block: 5px;
+
+}
+#days,#hours,#minutes,#seconds p{
+    display: flex;
+    justify-content: center;
+    font-size: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+}
+.addd{
+    border: 1px solid #00fffb;
+    margin-block: 5vh;
+    border-radius: 25px;
+    background-color: #1e1e1e;
+    
+}
+
+#days,#hours,#minutes,#seconds{
+    font-size: 2rem;
+}
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    max-width: 80vw;
+    background-color: #1e1e1e00;
+}
+.buttonss{
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    padding-block: 5px;
+}
+#delete{
+    border: 0px red;
+    color: red;
+    background-color: #1e1e1e00;
+    pointer-events: all
+}
+#complete{
+    color:#0f0;
+    border: 0px;
+    background-color: #1e1e1e00;
+    pointer-events: all
+
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.alert{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'bruno';
+    pointer-events: none;
+}
+.clearbtn1{
+    border:  1px solid rgb(255, 255, 255);
+    background-color: rgba(240, 248, 255, 0.107);
+    border-radius: 20px;
+    color: #ffffff;
+    font-family: 'bruno';
+    display: flex;
+    margin: 20px;
+    pointer-events: all
+
+
+}
+.clearbtn{
+    display: flex;
+    justify-content: center;
+    pointer-events: all
+}
+.entries-recorder,.text-left{
+    scale:0.75;
+}
+@media (min-width:90em) {
+    .text-left{
+        position:absolute;
+        top:12vh;
+        left:-10vw;
+        scale:0.6;
+    }
+    .entries-recorder{
+        position: absolute;
+        top:4vh;
+        right:5vw;
+    }
+    .clearbtn1{
+        position: absolute;
+        right:2.5vw;
+    }
+    .navbar-brand{
+        position: absolute;
+        left:3vw;
+        top:2vh;
+    }
+    #heading{
+        position: absolute;
+        top:8vh;
+        left:5vw;
+    }
+
+    
+}
+@media (max-width:288px){
+    .text-left{
+        position: absolute;
+        left:-2vw;
+        top:3vh;
+        
+    }
+    .entries-recorder{
+        top:50vh;
+        position: absolute;
+        left:-3vw;
+    }
+    body{
+        background-image: url("background-home-mobile.jpg");
+        background-repeat: repeat;
+        background-size:cover ;
+    }
+}
+@media  (max-width:70em) {
+    body{
+        background-image: url("background-home-tablet.jpg");
+        background-repeat: repeat;
+        background-size:cover ;
+    }
+    
+}
+.container-fluid{
+    pointer-events: none;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTDOWN+++</title>
+    <link rel="stylesheet" href="creative.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="navbar-brand">
+            <h5>GHOST007</h5>
+        </div>
+        <div class="text-center" id="heading">
+            TASK HORIZON 
+        </div>
+        <div class="text-left">
+            <form action="" class="task-entry">
+                <br>
+                <p class="alert"></p>
+                <hr>
+                <div class="tab">
+                    <p class="text-capitalize"><label for="task">enter task</label></p>
+                    <input type="text" id="task" placeholder="taskk" name="task">
+                    <p class="text-capitalize"><label for="date">enter deadline</label></p>
+                    <input type="number" min="0" id="date" placeholder="Days left" name="date" >
+                    <input type="number" min="0" id="hr" placeholder="hours left" name="date" >
+                    <input type="number" min="0" id="min" placeholder="minutes left" name="date" >
+                    <input type="number" min="0" id="sec" placeholder="secpnds left" name="date" >
+                </div>
+                <button id="submit" type="button" class="btn-group" onclick="handleSubmit()">SUBMIT</button>
+            </form>
+        </div>
+        <div class="entries-recorder">
+            <div class="list">
+            </div>
+            
+            
+        </div>
+        <div class="clearbtn">
+            <button  class="clearbtn1" type="button" onclick="handleclear()">Clear All Items</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
